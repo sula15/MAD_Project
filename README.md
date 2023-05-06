@@ -1,3 +1,5 @@
 # MAD_Project 
 
-please see that i have uploaded to my own repository due to an error in the project repo.
+welcome to the MAD project farmer UI
+
+please see that I have uploaded to my own repository due to an error in the project repo.
