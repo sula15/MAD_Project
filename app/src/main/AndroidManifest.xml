@@ -18,11 +18,6 @@
             android:name=".activities.SalesCalculator"
             android:exported="false" />
         <activity
-            android:name=".activities.MainActivitytesttabs"
-            android:exported="false"
-            android:label="@string/title_activity_main_activitytesttabs"
-            android:theme="@style/Theme.F2CFarmer.NoActionBar" />
-        <activity
             android:name=".activities.ProductsViewActivity"
             android:exported="false" />
         <activity

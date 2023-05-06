@@ -55,7 +55,7 @@ class ProductsViewActivity : AppCompatActivity() {
 
                     mAdapter.setOnItemClickListener(object : PrdAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
-                          val intent = Intent(this@ProductsViewActivity, ProductDetailsActivity::class.java)
+                           intent = Intent(this@ProductsViewActivity, ProductDetailsActivity::class.java)
 
                             //put extras
 
