@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vegetables_user"
+    android:backgroundTint="#E8FFFFFF"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivbackgroundfood"
+        android:layout_width="416dp"
+        android:layout_height="554dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        app:srcCompat="@drawable/vegetables_user" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="398dp"
+                        android:layout_height="429dp"
+                        android:background="@drawable/top_background"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ImageView
+                        android:id="@+id/ivUserImage"
+                        android:layout_width="@dimen/imageProfile_Width"
+                        android:layout_height="@dimen/imageProfile_Height"
+                        android:layout_marginTop="32dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="52dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="16dp"
+                        android:text="John"
+                        android:textSize="@dimen/UserName_Text_size"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        app:layout_constraintEnd_toEndOf="@+id/ivUserImage"
+                        app:layout_constraintHorizontal_bias="0.507"
+                        app:layout_constraintStart_toStartOf="@+id/ivUserImage"
+                        app:layout_constraintTop_toBottomOf="@+id/ivUserImage" />
+
+                    <TextView
+                        android:id="@+id/tvUseEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="john123@gmail.com"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/UserMail_Text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/ivUserImage"
+                        app:layout_constraintStart_toStartOf="@+id/ivUserImage"
+                        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+                    <ImageView
+                        android:id="@+id/ivCircle"
+                        android:layout_width="395dp"
+                        android:layout_height="389dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/circles" />
+
+                    <LinearLayout
+                        android:layout_width="364dp"
+                        android:layout_height="461dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="68dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@drawable/white_background"
+                        android:elevation="3dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvUseEmail">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnViewProducts"
+                                android:layout_width="@dimen/profilePage_Button_width"
+                                android:layout_height="@dimen/profilePage_Button_height"
+                                android:layout_marginStart="24dp"
+                                android:layout_marginTop="48dp"
+                                android:layout_marginEnd="24dp"
+                                android:backgroundTint="#50C878"
+                                android:text="@string/productsView"
+                                android:textColor="#ffffff"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <Button
+                                android:id="@+id/btnAddProducts"
+                                android:layout_width="@dimen/profilePage_Button_width"
+                                android:layout_height="@dimen/profilePage_Button_height"
+                                android:layout_marginTop="32dp"
+                                android:backgroundTint="@color/Emerald"
+                                android:text="@string/product_Add"
+                                android:textColor="#ffffff"
+                                app:layout_constraintEnd_toEndOf="@+id/btnViewProducts"
+                                app:layout_constraintStart_toStartOf="@+id/btnViewProducts"
+                                app:layout_constraintTop_toBottomOf="@+id/btnViewProducts" />
+
+                            <Button
+                                android:id="@+id/btnSalesCalculator"
+                                android:layout_width="@dimen/profilePage_Button_width"
+                                android:layout_height="@dimen/profilePage_Button_height"
+                                android:layout_marginTop="32dp"
+                                android:backgroundTint="@color/Emerald"
+                                android:text="@string/SalesCalc"
+                                android:textColor="#ffffff"
+                                app:layout_constraintEnd_toEndOf="@+id/btnAddProducts"
+                                app:layout_constraintStart_toStartOf="@+id/btnAddProducts"
+                                app:layout_constraintTop_toBottomOf="@+id/btnAddProducts" />
+
+                            <Button
+                                android:id="@+id/button5"
+                                android:layout_width="@dimen/profilePage_Button_width"
+                                android:layout_height="@dimen/profilePage_Button_height"
+                                android:layout_marginTop="46dp"
+                                android:backgroundTint="@color/Pistachio"
+                                android:text="@string/user_logout"
+                                android:textColor="#ffffff"
+                                app:layout_constraintEnd_toEndOf="@+id/btnSalesCalculator"
+                                app:layout_constraintStart_toStartOf="@+id/btnSalesCalculator"
+                                app:layout_constraintTop_toBottomOf="@+id/btnSalesCalculator" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

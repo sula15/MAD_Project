@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="imageProfile_Width">143dp</dimen>
+    <dimen name="imageProfile_Height">142dp</dimen>
+    <dimen name="UserName_Text_size">20sp</dimen>
+    <dimen name="UserMail_Text_size">20sp</dimen>
+    <dimen name="profilePage_Button_width">320dp</dimen>
+    <dimen name="profilePage_Button_height">62dp</dimen>
+    <dimen name="Product_QuantitySize">20dp</dimen>
+    <dimen name="Product_nameSize">24dp</dimen>
+    <dimen name="heading_size">30dp</dimen>
+    <dimen name="Earnings_value_Width">150dp</dimen>
+    <dimen name="Earning_value_Height">48dp</dimen>
+    <dimen name="EditButtonHeight">50dp</dimen>
+    <dimen name="EditButtonWidth">100dp</dimen>
+    <dimen name="quantityNumberHeight">25dp</dimen>
+    <dimen name="quantityNumberWidth">50dp</dimen>
+
+    <dimen name="etAddPrdLayoutWidth">300dp</dimen>
+    <dimen name="etAddPrdLayoutHeight">50dp</dimen>
+
+    <dimen name="buttonLayoutWidth">100dp</dimen>
+    <dimen name="ButtonLayoutHeight">50dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+</resources>

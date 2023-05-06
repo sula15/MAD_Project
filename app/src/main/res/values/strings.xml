@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Farmer_Profile</string>
+    <string name="user_name">Sarah Jessie</string>
+    <string name="user_email">Jessie3@gmail.com</string>
+    <string name="sales">Sales</string>
+    <string name="products_all">All Products</string>
+    <string name="productsView"> View Products</string>
+    <string name="productsADD"> Add Products</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_nameChange">Product Name</string>
+    <string name="product_descriptionChange">Add Product Description</string>
+    <string name="product_Edit">Edit Product</string>
+    <string name="product_Add">Add Product</string>
+    <string name="product1_name">Apple</string>
+    <string name="product2_name">Carrot</string>
+    <string name="product3_name">Orange</string>
+    <string name="product4_name">Cucumber</string>
+    <string name="Quantity">Qty</string>
+    <string name="price">Add Price</string>
+    <string name="QuantityEdit">Quantity</string>
+    <string name="PriceEdit">price</string>
+    <string name="user_logout">Logout</string>
+    <string name="EditButton">Edit</string>
+    <string name="SaveChangesButton">Save Changes</string>
+    <string name="SaveButton">Save</string>
+    <string name="insertImageButton">Upload Image</string>
+    <string name="DeleteButton">Delete</string>
+    <string name="SalesCalc">Sales Calculator</string>
+    <string name="title_activity_main_activitytesttabs">MainActivitytesttabs</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+</resources>

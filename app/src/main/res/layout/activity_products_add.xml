@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProductsAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vegetables_user"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="348dp"
+                android:layout_height="613dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/white_background"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="684dp">
+
+                    <TextView
+                        android:id="@+id/tvAddProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginEnd="24dp"
+                        android:text="@string/product_Add"
+                        android:textSize="@dimen/heading_size"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/etPrdName"
+                        android:layout_width="@dimen/etAddPrdLayoutWidth"
+                        android:layout_height="@dimen/etAddPrdLayoutHeight"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/add_product_border"
+                        android:ems="10"
+                        android:hint="  Enter Product Name"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="@+id/tvAddProduct"
+                        app:layout_constraintStart_toStartOf="@+id/tvAddProduct"
+                        app:layout_constraintTop_toBottomOf="@+id/tvAddProduct" />
+
+                    <EditText
+                        android:id="@+id/etPrdPrice"
+                        android:layout_width="@dimen/etAddPrdLayoutWidth"
+                        android:layout_height="@dimen/etAddPrdLayoutHeight"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/add_product_border"
+                        android:ems="10"
+                        android:hint="  Enter Product Price (Rs)"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="@+id/etPrdName"
+                        app:layout_constraintStart_toStartOf="@+id/etPrdName"
+                        app:layout_constraintTop_toBottomOf="@+id/etPrdName" />
+
+                    <EditText
+                        android:id="@+id/etPrdQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/etAddPrdLayoutHeight"
+                        android:layout_marginTop="36dp"
+                        android:background="@drawable/add_product_border"
+                        android:ems="10"
+                        android:hint="  Enter Quantity"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toEndOf="@+id/etPrdPrice"
+                        app:layout_constraintStart_toStartOf="@+id/etPrdPrice"
+                        app:layout_constraintTop_toBottomOf="@+id/etPrdPrice" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="@dimen/buttonLayoutWidth"
+                        android:layout_height="@dimen/ButtonLayoutHeight"
+                        android:layout_marginTop="46dp"
+                        android:background="@drawable/all_buttons"
+                        android:text="@string/SaveButton"
+                        app:layout_constraintEnd_toEndOf="@+id/tvAddProduct"
+                        app:layout_constraintHorizontal_bias="0.506"
+                        app:layout_constraintStart_toStartOf="@+id/tvAddProduct"
+                        app:layout_constraintTop_toBottomOf="@+id/etPrdQty" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
