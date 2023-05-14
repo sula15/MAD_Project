@@ -51,13 +51,16 @@ class ProductsAddActivity : AppCompatActivity() {
         //validate the form
         if(prdName.isEmpty()){
             etPrdName.error = "Please enter product Name"
+            return
         }
         if(prdPrice.isEmpty()){
             etPrdPrice.error = "Please enter product Price"
+            return
         }
 
         if(prdQuantity.isEmpty()){
             etPrdQuantity.error = "Please enter product Quantity"
+            return
         }
 
         val prdId= dbRef.push().key!!
