@@ -29,6 +29,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         initView()
         setValuesToViews()
 
+        //update button click
         buttonUpdate.setOnClickListener {
             openUpdateDialog(
                 intent.getStringExtra("prdId").toString(),
@@ -36,6 +37,7 @@ class ProductDetailsActivity : AppCompatActivity() {
             )
         }
 
+        //delete button click
         buttonDelete.setOnClickListener {
             deleteRecord(
                 intent.getStringExtra("prdId").toString()
@@ -44,6 +46,7 @@ class ProductDetailsActivity : AppCompatActivity() {
 
     }
 
+    //Initializing the views
     private fun initView() {
 
         tvPrdId = findViewById(R.id.tvPrdId)
