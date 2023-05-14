@@ -18,6 +18,7 @@ class ProductsAddActivity : AppCompatActivity() {
     private lateinit var etPrdQuantity : EditText
     private lateinit var btnSave : Button
 
+    //database reference variable
     private lateinit var dbRef : DatabaseReference
 
 
@@ -32,6 +33,7 @@ class ProductsAddActivity : AppCompatActivity() {
         etPrdQuantity = findViewById(R.id.etPrdQty)
         btnSave = findViewById(R.id.btnSave)
 
+        //creating a reference to the firebase path
         dbRef = FirebaseDatabase.getInstance().getReference("Products")
 
         btnSave.setOnClickListener {

@@ -17,6 +17,7 @@ class SalesCalculator : AppCompatActivity() {
     private lateinit var tvAnswer : TextView
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sales_calculator)
@@ -27,12 +28,16 @@ class SalesCalculator : AppCompatActivity() {
         etIncome = findViewById(R.id.editTextExcIncome)
         etPricePU = findViewById(R.id.etUnitPrice)
 
+        // initializing values
         val num1 = etIncome
         val num2 = etPricePU
 
         val tot = tvAnswer
 
+
         btnCalc.setOnClickListener{
+
+            //setting values taken from edit text to text views
             val val1 = num1.text.toString().toInt()
             val val2 = num2.text.toString().toInt()
 
